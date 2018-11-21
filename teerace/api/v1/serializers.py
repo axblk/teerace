@@ -8,7 +8,7 @@ from race.models import BestRun, Map, Run
 
 
 class UserProfileSerializer(serializers.ModelSerializer):
-    country = CountryField()
+    country = CountryField(allow_blank=True)
     
     class Meta:
         model = UserProfile
